@@ -1,0 +1,17 @@
+package com.bankapp.banking_app.service;
+
+import org.springframework.stereotype.Service;
+
+import com.bankapp.banking_app.dto.AccountDto;
+
+@Service
+public class AccountServiceImpl implements AccountService {
+
+	@Override
+	public AccountDto createAccount(AccountDto accountDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

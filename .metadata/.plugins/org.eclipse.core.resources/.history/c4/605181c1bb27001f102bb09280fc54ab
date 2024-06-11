@@ -1,0 +1,5 @@
+package com.bankapp.banking_app.entity;
+
+public class Account {
+
+}

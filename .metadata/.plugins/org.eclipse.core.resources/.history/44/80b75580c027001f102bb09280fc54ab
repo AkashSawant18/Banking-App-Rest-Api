@@ -1,0 +1,11 @@
+package com.bankapp.banking_app.dto;
+
+import lombok.Data;
+
+@Data
+public class AccountDto {
+	private Long Id;
+	private String accountHolderName;
+	private double balance;
+
+}

@@ -1,0 +1,29 @@
+package com.bankapp.banking_app.service;
+
+import org.springframework.stereotype.Service;
+
+import com.bankapp.banking_app.dto.AccountDto;
+import com.bankapp.banking_app.entity.Account;
+import com.bankapp.banking_app.mapper.AccountMapper;
+import com.bankapp.banking_app.repository.AccountRepository;
+
+@Service
+public class AccountServiceImpl implements AccountService {
+	
+	private AccountRepository accountRepository;
+	
+	
+	public AccountServiceImpl(AccountRepository accountRepository) {
+		this.accountRepository = accountRepository;
+	}
+
+
+	@Override
+	public AccountDto createAccount(AccountDto accountDto) {
+		Account account = AccountMapper.mapToAccount(accountDto);
+		accountRepository.save(account);
+		return null;
+	}
+	
+
+}
